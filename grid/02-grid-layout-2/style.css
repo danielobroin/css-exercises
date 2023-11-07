@@ -4,6 +4,8 @@ body, html {
 }
 
 .container {
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr;
   text-align: center;
   height: 100%;
   padding: 16px;
@@ -21,20 +23,22 @@ body, html {
 
 .header {
   background-color: #FFDE22;
-  grid-column: 1 / 3;
+  grid-area: 1 / 1 / 2 / 4;
 }
 
 .sidebar {
   background-color: #FF7755;
-  grid-row: 2 / 4;
+  grid-area: 2 / 1 / 6 / 2;
 }
 
 .nav {
   background-color: #00DDFF;
+  grid-area: 2 / 2 / 2 / 4
 }
 
 .article {
   background-color: #bccbde;
+  grid-area: 3 / 2 / 6 / 4;
 }
 
 .article p {
@@ -46,5 +50,5 @@ body, html {
 
 .footer {
   background-color: #393f4d;
-  grid-column: 1 / 3;
+  grid-area: 6 / 1 / 7 / 4;
 }
